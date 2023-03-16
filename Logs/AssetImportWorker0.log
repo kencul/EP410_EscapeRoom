@@ -1181,3 +1181,4 @@ Resuming Guid(c6a74181d4000004887343fb87b3c53a) Importer(-1,00000000000000000000
 Assertion failed on expression: 'state.state == kUpToDate'
 Assertion failed on expression: 'state.artifactID == result'
  -> (artifact id: '17f493922f9340bd7a5a3ba01790ec90') in 0.007366 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
