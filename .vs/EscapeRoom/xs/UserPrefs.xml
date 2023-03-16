@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{4190FBC9-CD5D-FA5A-360D-403CAE57297A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Snappy.cs">
+    <Files>
+      <File FileName="Assets/VR Beginner/Scripts/IntermittentEmiters.cs" Line="62" Column="1" />
+      <File FileName="Assets/Snappy.cs" Line="28" Column="46" />
+      <File FileName="Assets/LookTo.cs" Line="36" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d0e22498-5241-4bd3-9836-5843ae8fd862" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
