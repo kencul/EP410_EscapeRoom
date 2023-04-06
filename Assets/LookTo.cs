@@ -11,6 +11,8 @@ public class LookTo : MonoBehaviour
     public AudioMixerSnapshot groupA;
     public AudioMixerSnapshot groupB;
     public AudioMixerSnapshot groupC;
+    bool lookedAtFire;
+    bool lookedAtRadio;
 
 
 
@@ -21,9 +23,7 @@ public class LookTo : MonoBehaviour
         Transform camera = Camera.main.transform;
         Ray ray;
         RaycastHit hit;
-        GameObject hitObject;
-        //int layerMask = LayerMask.GetMask("Water");
-       
+        GameObject hitObject;       
 
         Debug.DrawRay(camera.position, camera.rotation * Vector3.forward * 30f, Color.red);
 
@@ -36,27 +36,25 @@ public class LookTo : MonoBehaviour
            // Debug.Log("The Object is " + hitObject);
 
 
-            if (hitObject.gameObject.name == "Radio") {
+            if (!lookedAtRadio && hitObject.gameObject.name == "Radio") {
 
                 
                 groupB.TransitionTo(1.5f);
+                lookedAtRadio = true;
 
             }
 
-            if (hitObject.gameObject.name == "FireBoy")
+            if (!lookedAtFire && hitObject.gameObject.name == "FireBoy")
             {
 
       
                 groupA.TransitionTo(1.5f);
+                lookedAtFire = true;
 
             }
 
 
-            //else
-            //    {
-
-            //    groupC.TransitionTo(1.5f);
-            //}
+            
         }
 
 
@@ -86,4 +84,10 @@ public class LookTo : MonoBehaviour
         }
     }
 
+    IEnumerator GetBack()
+    {
+
+        yield return new WaitForSeconds(3f);
+
+    }
 }
